@@ -26,7 +26,7 @@ export async function POST(request: Request) {
 
   if (!apiKey) {
     console.error(
-      "RESEND_API_KEY is not set — contact form submission was not emailed:",
+      "RESEND_API_KEY is not set: contact form submission was not emailed.",
       { name, phone, email, address, service, message }
     );
     return NextResponse.json(

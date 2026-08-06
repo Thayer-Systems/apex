@@ -35,7 +35,7 @@ export default function AboutPage() {
               Straight answers, done right.
             </h2>
             <p className="mt-5 leading-relaxed text-black/60">
-              Every project starts with understanding the site &mdash; access, materials,
+              Every project starts with understanding the site: access, materials,
               disposal needs, and the condition the property needs to be left in. From
               there, Apex handles the demolition, excavation, land clearing, grading, and
               hauling required to move the project forward, and leaves the site ready for

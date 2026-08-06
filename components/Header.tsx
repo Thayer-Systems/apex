@@ -12,21 +12,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-apex-black text-apex-white">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 md:px-8">
-        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+        <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
           <Image
-            src="/logo-mark-light.png"
+            src="/logo-horizontal-light.png"
             alt={site.name}
-            width={171}
-            height={189}
-            className="h-12 w-auto"
+            width={1131}
+            height={385}
+            className="h-11 w-auto sm:h-12"
             priority
           />
-          <span className="font-display text-lg font-semibold uppercase tracking-wide leading-tight">
-            Apex
-            <span className="block text-[0.6rem] font-body font-medium tracking-[0.2em] text-white/60">
-              Demolition &amp; Excavation
-            </span>
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

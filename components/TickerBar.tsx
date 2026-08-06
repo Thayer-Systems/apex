@@ -1,7 +1,7 @@
 import { site } from "@/lib/site";
 
 const items = [
-  `Free Estimates — Call ${site.phone} Now`,
+  `Free Estimates: Call ${site.phone} Now`,
   "Residential & Commercial",
   "Licensed & Insured",
   "Serving the Greater Dayton Area",

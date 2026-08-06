@@ -20,8 +20,8 @@ export default function Home() {
           One contractor from clearing to cleanup.
         </h2>
         <p className="mt-5 max-w-2xl leading-relaxed text-black/60">
-          Apex handles the demanding work required to move a property forward &mdash;
-          demolition, excavation, land clearing, grading, and hauling &mdash; with one
+          Apex handles the demanding work required to move a property forward:
+          demolition, excavation, land clearing, grading, and hauling, all with one
           point of contact from start to finish.
         </p>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

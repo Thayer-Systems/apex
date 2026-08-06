@@ -7,8 +7,8 @@ export default function HomeHero() {
   return (
     <section className="relative overflow-hidden bg-apex-black text-white">
       <Image
-        src="/photos/hero-foundation.jpg"
-        alt="Apex crew excavation and foundation work for a new home"
+        src="/photos/hero-excavator.jpg"
+        alt="Excavator on a job site"
         fill
         priority
         sizes="100vw"
@@ -33,7 +33,7 @@ export default function HomeHero() {
         </h1>
         <p className="mt-6 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
           Full-service demolition and excavation for homeowners, builders, and businesses
-          throughout West Milton and the greater Dayton area &mdash; from teardown to
+          throughout West Milton and the greater Dayton area, from teardown to
           final cleanup.
         </p>
 
