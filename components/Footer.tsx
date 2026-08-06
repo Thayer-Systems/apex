@@ -11,11 +11,11 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           <div>
             <Image
-              src="/logo.png"
+              src="/logo-mark-light.png"
               alt={site.name}
-              width={72}
-              height={72}
-              className="h-16 w-16 rounded-sm bg-white p-1"
+              width={171}
+              height={189}
+              className="h-16 w-auto"
             />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
               {site.description}

@@ -42,11 +42,11 @@ export default function WhyApex() {
           }}
         />
         <Image
-          src="/logo.png"
+          src="/logo-mark-light.png"
           alt=""
-          width={220}
-          height={220}
-          className="relative opacity-90"
+          width={171}
+          height={189}
+          className="relative h-56 w-auto opacity-90"
         />
       </div>
     </div>
