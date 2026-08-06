@@ -35,6 +35,27 @@ export const metadata: Metadata = {
   },
 };
 
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  name: site.name,
+  description: site.description,
+  url: "https://www.apexdemolitionexcavation.com",
+  telephone: site.phone,
+  email: site.email,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: site.address.line1,
+    addressLocality: "West Milton",
+    addressRegion: "OH",
+    postalCode: "45383",
+    addressCountry: "US",
+  },
+  areaServed: site.serviceArea,
+  openingHours: "Mo-Fr 07:00-17:00",
+  sameAs: [site.facebook],
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
@@ -42,6 +63,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${oswald.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-apex-cream text-apex-black">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        />
         <Header />
         <main className="flex-1 pb-16 md:pb-0">{children}</main>
         <Footer />

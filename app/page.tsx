@@ -17,12 +17,12 @@ export default function Home() {
       <Section id="services">
         <Kicker>Full-Service Sitework</Kicker>
         <h2 className="font-display max-w-2xl text-3xl font-semibold uppercase leading-[1] tracking-tight sm:text-4xl md:text-5xl">
-          One contractor from clearing to cleanup.
+          One team from clearing to cleanup.
         </h2>
         <p className="mt-5 max-w-2xl leading-relaxed text-black/60">
           Apex handles the demanding work required to move a property forward:
           demolition, excavation, land clearing, grading, and hauling, all with one
-          point of contact from start to finish.
+          crew and one point of contact from start to finish.
         </p>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service) => (

@@ -5,7 +5,10 @@ import { Service } from "@/lib/services";
 
 export default function ServiceCard({ service }: { service: Service }) {
   return (
-    <article className="group relative flex h-full flex-col overflow-hidden border border-black/10 bg-white transition-all hover:-translate-y-1 hover:shadow-xl">
+    <Link
+      href={`/services/${service.slug}`}
+      className="group relative flex h-full flex-col overflow-hidden border border-black/10 bg-white transition-all hover:-translate-y-1 hover:shadow-xl"
+    >
       <div className="relative h-44 w-full overflow-hidden">
         <Image
           src={service.image}
@@ -21,14 +24,11 @@ export default function ServiceCard({ service }: { service: Service }) {
           {service.title}
         </h3>
         <p className="mt-3 flex-1 leading-relaxed text-black/60">{service.summary}</p>
-        <Link
-          href={`/services/${service.slug}`}
-          className="font-display mt-6 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.08em] text-apex-copper transition-colors group-hover:text-apex-copper-bright"
-        >
+        <span className="font-display mt-6 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.08em] text-apex-copper transition-colors group-hover:text-apex-copper-bright">
           Explore {service.shortTitle}
           <ArrowRight size={16} />
-        </Link>
+        </span>
       </div>
-    </article>
+    </Link>
   );
 }

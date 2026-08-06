@@ -1,0 +1,22 @@
+# Apex Demolition & Excavation
+
+> Locally owned demolition and excavation company serving West Milton, Ohio and the
+> greater Dayton / Miami Valley area. Residential and commercial demolition,
+> excavation, land clearing & sitework, and hauling & material delivery.
+
+Phone: (937) 694-3182
+Email: Samuelh@apex-excavationllc.com
+Address: 50 Jessicas Place, West Milton, OH 45383
+Hours: Monday - Friday, 7am - 5pm
+
+## Pages
+
+- [Home](https://www.apexdemolitionexcavation.com/): Overview of Apex's services, process, and recent work.
+- [Services](https://www.apexdemolitionexcavation.com/services): Full list of services offered.
+- [Demolition](https://www.apexdemolitionexcavation.com/services/demolition): Residential and commercial demolition, concrete removal, debris haul-off.
+- [Excavation](https://www.apexdemolitionexcavation.com/services/excavation): Foundation, utility, and drainage excavation.
+- [Land Clearing & Sitework](https://www.apexdemolitionexcavation.com/services/land-clearing-sitework): Brush clearing, grading, and site preparation.
+- [Hauling & Material Delivery](https://www.apexdemolitionexcavation.com/services/hauling-material-delivery): Topsoil, gravel, mulch delivery and debris hauling.
+- [About](https://www.apexdemolitionexcavation.com/about): Company background and commitments.
+- [FAQ](https://www.apexdemolitionexcavation.com/faq): Common questions about estimates, permits, and each service.
+- [Contact](https://www.apexdemolitionexcavation.com/contact): Free estimate request form and contact details.

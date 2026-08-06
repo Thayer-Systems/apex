@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
-  description: `Apex Demolition & Excavation is a locally owned contractor serving ${site.serviceArea}.`,
+  description: `Apex Demolition & Excavation is a locally owned team serving ${site.serviceArea}.`,
 };
 
 const commitments = [
@@ -24,7 +24,7 @@ export default function AboutPage() {
       <PageHero
         kicker="About Apex"
         title="Locally owned. Built for heavy work."
-        description={`Apex Demolition & Excavation is a locally owned contractor based in West Milton, Ohio, serving homeowners, property owners, builders, and businesses throughout ${site.serviceArea}.`}
+        description={`Apex Demolition & Excavation is a locally owned team based in West Milton, Ohio, serving homeowners, property owners, builders, and businesses throughout ${site.serviceArea}.`}
       />
 
       <Section>

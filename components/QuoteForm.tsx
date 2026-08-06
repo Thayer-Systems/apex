@@ -2,13 +2,14 @@
 
 import { FormEvent, useState } from "react";
 import { site } from "@/lib/site";
+import TruckLoader from "@/components/TruckLoader";
 
 const inputClass =
   "w-full min-h-[50px] border border-black/15 bg-white px-4 py-3 text-sm text-apex-black outline-none transition-colors focus:border-apex-copper";
 const labelClass =
   "font-display block text-xs font-semibold uppercase tracking-[0.08em] text-black/70 mb-2";
 
-type Status = "idle" | "submitting" | "success" | "error";
+type Status = "idle" | "submitting" | "animating" | "success" | "error";
 
 export default function QuoteForm() {
   const [status, setStatus] = useState<Status>("idle");
@@ -34,14 +35,28 @@ export default function QuoteForm() {
         throw new Error(body?.error || "Something went wrong. Please try again.");
       }
 
-      setStatus("success");
       form.reset();
+
+      const prefersReducedMotion =
+        typeof window !== "undefined" &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if (prefersReducedMotion) {
+        setStatus("success");
+      } else {
+        setStatus("animating");
+        setTimeout(() => setStatus("success"), 1500);
+      }
     } catch (err) {
       setStatus("error");
       setErrorMessage(
         err instanceof Error ? err.message : "Something went wrong. Please try again."
       );
     }
+  }
+
+  if (status === "animating") {
+    return <TruckLoader />;
   }
 
   if (status === "success") {

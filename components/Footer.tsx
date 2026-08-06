@@ -34,6 +34,11 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link href="/faq" className="hover:text-apex-copper-bright">
+                  FAQ
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -87,11 +92,19 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-white/40 md:flex-row md:items-center md:justify-between">
+        <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/40 md:flex-row md:items-center md:justify-between">
           <p>
             &copy; {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>
-          <p>Proudly serving {site.serviceArea}.</p>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <Link href="/privacy-policy" className="hover:text-white/70">
+              Privacy Policy
+            </Link>
+            <Link href="/terms-and-conditions" className="hover:text-white/70">
+              Terms &amp; Conditions
+            </Link>
+            <span>Proudly serving {site.serviceArea}.</span>
+          </div>
         </div>
       </div>
     </footer>

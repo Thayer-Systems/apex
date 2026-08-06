@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import QuoteForm from "@/components/QuoteForm";
+import LocationMap from "@/components/LocationMap";
 import { Section, Kicker } from "@/components/Section";
 import { site } from "@/lib/site";
 
@@ -18,6 +20,8 @@ export default function ContactPage() {
         kicker="Get In Touch"
         title="Request a Free Estimate"
         description="Tell us about your project and we'll follow up with next steps. For anything urgent, call us directly."
+        image="/photos/contact-hero.jpg"
+        imageAlt="Poured footings ready for construction"
       />
 
       <Section>
@@ -77,6 +81,18 @@ export default function ContactPage() {
                 </div>
               </li>
             </ul>
+
+            <Image
+              src="/logo-horizontal-dark.png"
+              alt={site.name}
+              width={1131}
+              height={385}
+              className="mt-10 h-16 w-auto"
+            />
+
+            <div className="mt-8">
+              <LocationMap />
+            </div>
           </div>
 
           <div className="border border-black/10 bg-white p-6 sm:p-10">
