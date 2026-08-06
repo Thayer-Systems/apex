@@ -4,6 +4,8 @@ export type Service = {
   shortTitle: string;
   summary: string;
   description: string;
+  image: string;
+  imageAlt: string;
   bullets: string[];
   faqs: { q: string; a: string }[];
 };
@@ -13,6 +15,8 @@ export const services: Service[] = [
     slug: "demolition",
     title: "Demolition",
     shortTitle: "Demolition",
+    image: "/photos/service-demolition.jpg",
+    imageAlt: "Excavator demolishing a building structure",
     summary:
       "Structure, garage, shed, concrete, and selective demolition with complete debris removal.",
     description:
@@ -44,6 +48,8 @@ export const services: Service[] = [
     slug: "excavation",
     title: "Excavation",
     shortTitle: "Excavation",
+    image: "/photos/service-excavation.jpg",
+    imageAlt: "Utility trench excavation with pipe installation",
     summary:
       "Precise excavation for foundations, utilities, drainage, and site construction.",
     description:
@@ -79,6 +85,8 @@ export const services: Service[] = [
     slug: "land-clearing-sitework",
     title: "Land Clearing & Sitework",
     shortTitle: "Land Clearing",
+    image: "/photos/service-land-clearing.jpg",
+    imageAlt: "Bulldozer clearing a wooded lot",
     summary:
       "Brush, overgrowth, and site obstacles cleared and graded to prepare your property.",
     description:
@@ -110,6 +118,8 @@ export const services: Service[] = [
     slug: "hauling-material-delivery",
     title: "Hauling & Material Delivery",
     shortTitle: "Hauling",
+    image: "/photos/service-hauling.jpg",
+    imageAlt: "Apex dump truck ready for material delivery",
     summary:
       "Mulch, sand, topsoil, and gravel delivery, plus debris removal and job-site cleanup.",
     description:

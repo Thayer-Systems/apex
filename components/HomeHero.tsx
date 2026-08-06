@@ -1,16 +1,25 @@
 import Link from "next/link";
+import Image from "next/image";
 import { PhoneCall } from "lucide-react";
 import { site } from "@/lib/site";
 
 export default function HomeHero() {
   return (
     <section className="relative overflow-hidden bg-apex-black text-white">
-      <div className="absolute inset-0 bg-grit opacity-40" />
+      <Image
+        src="/photos/hero-foundation.jpg"
+        alt="Apex crew excavation and foundation work for a new home"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-grit opacity-20" />
       <div
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(circle at 82% 12%, rgba(182,83,24,0.35), transparent 40%), linear-gradient(120deg, rgba(0,0,0,0.92) 10%, rgba(20,20,20,0.65) 60%, rgba(20,20,20,0.35) 100%)",
+            "radial-gradient(circle at 82% 12%, rgba(182,83,24,0.35), transparent 40%), linear-gradient(100deg, rgba(0,0,0,0.92) 20%, rgba(0,0,0,0.72) 55%, rgba(0,0,0,0.4) 100%)",
         }}
       />
       <div className="absolute -right-24 -bottom-32 h-[420px] w-[420px] rotate-45 border-2 border-apex-copper/30" />

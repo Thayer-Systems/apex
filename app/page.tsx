@@ -3,6 +3,7 @@ import TickerBar from "@/components/TickerBar";
 import ServiceCard from "@/components/ServiceCard";
 import ProcessSteps from "@/components/ProcessSteps";
 import WhyApex from "@/components/WhyApex";
+import RecentWork from "@/components/RecentWork";
 import CTASection from "@/components/CTASection";
 import { Section, Kicker } from "@/components/Section";
 import { services } from "@/lib/services";
@@ -33,6 +34,18 @@ export default function Home() {
       <div className="bg-apex-black text-white">
         <Section>
           <WhyApex />
+        </Section>
+      </div>
+
+      <div className="bg-apex-charcoal text-white">
+        <Section>
+          <Kicker dark>Recent Work</Kicker>
+          <h2 className="font-display max-w-2xl text-3xl font-semibold uppercase leading-[1] tracking-tight sm:text-4xl md:text-5xl">
+            See the difference the right crew makes.
+          </h2>
+          <div className="mt-10">
+            <RecentWork />
+          </div>
         </Section>
       </div>
 

@@ -32,21 +32,20 @@ export default function WhyApex() {
         </ul>
       </div>
 
-      <div className="relative flex aspect-square items-center justify-center overflow-hidden border border-white/10 bg-apex-charcoal">
-        <div className="absolute inset-0 bg-grit opacity-30" />
+      <div className="relative aspect-square overflow-hidden border border-white/10 bg-apex-charcoal">
+        <Image
+          src="/photos/why-apex-crew.jpg"
+          alt="Apex crew setting up a concrete patio pour"
+          fill
+          sizes="(min-width: 768px) 50vw, 100vw"
+          className="object-cover"
+        />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(circle at 30% 20%, rgba(182,83,24,0.28), transparent 55%)",
+              "linear-gradient(0deg, rgba(0,0,0,0.55), transparent 45%), radial-gradient(circle at 30% 20%, rgba(182,83,24,0.18), transparent 55%)",
           }}
-        />
-        <Image
-          src="/logo-mark-light.png"
-          alt=""
-          width={171}
-          height={189}
-          className="relative h-56 w-auto opacity-90"
         />
       </div>
     </div>

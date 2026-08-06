@@ -43,6 +43,8 @@ export default async function ServiceDetailPage({
         kicker="Service"
         title={service.title}
         description={service.description}
+        image={service.image}
+        imageAlt={service.imageAlt}
       />
 
       <Section>
