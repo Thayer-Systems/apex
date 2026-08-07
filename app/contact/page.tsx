@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import PageHero from "@/components/PageHero";
-import QuoteForm from "@/components/QuoteForm";
+import JobberRequestForm from "@/components/JobberRequestForm";
 import LocationMap from "@/components/LocationMap";
 import { Section, Kicker } from "@/components/Section";
 import { site } from "@/lib/site";
@@ -96,7 +96,7 @@ export default function ContactPage() {
           </div>
 
           <div className="border border-black/10 bg-white p-6 sm:p-10">
-            <QuoteForm />
+            <JobberRequestForm />
           </div>
         </div>
       </Section>
