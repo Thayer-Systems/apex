@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --apex-black: #141414;
+  --apex-charcoal: #221f1c;
+  --apex-copper: #b65318;
+  --apex-copper-bright: #d97a34;
+  --apex-cream: #f5f1ea;
+  --apex-white: #ffffff;
+  --apex-line: rgba(20, 20, 20, 0.12);
+}
+
+@theme inline {
+  --color-apex-black: var(--apex-black);
+  --color-apex-charcoal: var(--apex-charcoal);
+  --color-apex-copper: var(--apex-copper);
+  --color-apex-copper-bright: var(--apex-copper-bright);
+  --color-apex-cream: var(--apex-cream);
+  --color-apex-white: var(--apex-white);
+  --font-display: var(--font-oswald);
+  --font-body: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--apex-cream);
+  color: var(--apex-black);
+  font-family: var(--font-body), Arial, sans-serif;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display), Arial, sans-serif;
+}
+
+.bg-grit {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+.diagonal-mark {
+  background: repeating-linear-gradient(
+    115deg,
+    var(--apex-copper) 0px,
+    var(--apex-copper) 46px,
+    transparent 46px,
+    transparent 60px
+  );
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 22s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
