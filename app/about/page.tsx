@@ -68,21 +68,13 @@ export default function AboutPage() {
 
       <Section className="border-t border-black/10">
         <div className="grid items-center gap-14 md:grid-cols-2">
-          <div className="relative flex aspect-square items-center justify-center overflow-hidden border border-black/10 bg-apex-charcoal md:order-2">
-            <div className="absolute inset-0 bg-grit opacity-30" />
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  "radial-gradient(circle at 30% 20%, rgba(182,83,24,0.18), transparent 55%)",
-              }}
-            />
+          <div className="relative aspect-square overflow-hidden border border-black/10 bg-apex-charcoal md:order-2">
             <Image
-              src="/logo-mark-light.png"
-              alt=""
-              width={171}
-              height={189}
-              className="relative h-40 w-auto opacity-80"
+              src="/photos/founder-samuel.jpg"
+              alt="Samuel Hemmerick, owner of Apex Demolition & Excavation"
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
             />
           </div>
           <div className="md:order-1">
