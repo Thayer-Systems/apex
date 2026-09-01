@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Check } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
@@ -61,6 +62,53 @@ export default function AboutPage() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+      </Section>
+
+      <Section className="border-t border-black/10">
+        <div className="grid items-center gap-14 md:grid-cols-2">
+          <div className="relative flex aspect-square items-center justify-center overflow-hidden border border-black/10 bg-apex-charcoal md:order-2">
+            <div className="absolute inset-0 bg-grit opacity-30" />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "radial-gradient(circle at 30% 20%, rgba(182,83,24,0.18), transparent 55%)",
+              }}
+            />
+            <Image
+              src="/logo-mark-light.png"
+              alt=""
+              width={171}
+              height={189}
+              className="relative h-40 w-auto opacity-80"
+            />
+          </div>
+          <div className="md:order-1">
+            <Kicker>Meet the Owner</Kicker>
+            <h2 className="font-display text-3xl font-semibold uppercase leading-[1] tracking-tight sm:text-4xl">
+              Samuel Hemmerick
+            </h2>
+            <p className="mt-5 leading-relaxed text-black/60">
+              I&rsquo;m Samuel, owner of Apex Demolition &amp; Excavation.
+            </p>
+            <p className="mt-4 leading-relaxed text-black/60">
+              I started Apex because I wanted to build a company people could count on.
+              I&rsquo;ve spent over 11 years in construction, learning the trade and
+              running heavy equipment, and I&rsquo;ve seen firsthand what it takes to get
+              a job done right.
+            </p>
+            <p className="mt-4 leading-relaxed text-black/60">
+              Apex is a local, family-owned business based in West Milton, Ohio, serving
+              the surrounding Miami Valley. We handle demolition, excavation, hauling,
+              drainage, site prep, and more.
+            </p>
+            <p className="mt-4 leading-relaxed text-black/60">
+              I&rsquo;m still growing the business, and I&rsquo;m proud of where
+              it&rsquo;s headed. My goal is simple: show up, do quality work, treat
+              people right, and leave every job better than I found it.
+            </p>
           </div>
         </div>
       </Section>
