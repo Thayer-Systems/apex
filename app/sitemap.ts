@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { services } from "@/lib/services";
+import { posts } from "@/lib/blog";
 
 const baseUrl = "https://www.apexdemolitionexcavation.com";
 
@@ -23,5 +24,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
   }));
 
-  return [...staticRoutes, ...serviceRoutes];
+  const blogRoutes = posts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+  }));
+
+  return [...staticRoutes, ...serviceRoutes, ...blogRoutes];
 }
